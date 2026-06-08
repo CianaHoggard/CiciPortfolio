@@ -1,3 +1,6 @@
+const base = import.meta.env.BASE_URL;
+
+
 export const assistantStyling = [
   {
     id: "arbys-2025-anthony-cedric",
@@ -8,8 +11,8 @@ export const assistantStyling = [
     credit: "Key Costumer",
     name: "Cici Hoggard",
     year: "2025",
-    embed: "/work/Arbys.mp4",
-    thumb: "/work/arbys.jpg",
+    embed: `${base}/videos/Arbys.mp4`,
+    thumb: `${base}/images/arbys.jpg`,
     client: "Arby’s",
     talent: ["Anthony Anderson", "Cedric the Entertainer"]
   },
@@ -34,8 +37,8 @@ export const assistantStyling = [
     credit: "1st Assistant Costumer",
     name: "Cici Hoggard",
     year: "2025",
-    embed: "/birthday.mp4",
-    thumb: "/trex.jpg",
+    embed: `${base}/videos/birthday.mp4`,
+    thumb: `${base}/images/trex.jpg`,
     client: "Amazon",
   },
   {
@@ -73,8 +76,8 @@ export const assistantStyling = [
     credit: "Key Costumer",
     name: "Cici Hoggard",
     year: "2025",
-    embed: "/work/mini.mp4",
-    thumb: "/magic.jpg",
+    embed: `${base}/videos/mini.mp4`,
+    thumb: `${base}/images/magic.jpg`,
     client: "Apple",
   },
   {
@@ -96,14 +99,14 @@ export const assistantStyling = [
     credit: "Wardrobe Assistant",
     name: "Cici Hoggard",
     year: "2025",
-    embed: "/work/pregame.mp4",
-    thumb: "/work/pregame.jpg",
+    embed: `${base}/videos/pregame.mp4`,
+    thumb: `${base}/images/pregame.jpg`,
   },
   {
     id: "dosequis-breakup",
     title: "Dos Equis | Breakup",
-    embed: "/work/breakup.mp4",
-    thumb: "/work/breakup.jpg",
+    embed: `${base}/videos/breakup.mp4`,
+    thumb: `${base}/images/breakup.jpg`,
      leadrole: "Wardrobe Stylist",
     designer: "Bethany Bankston",
     credit: "Wardrobe Assistant",
