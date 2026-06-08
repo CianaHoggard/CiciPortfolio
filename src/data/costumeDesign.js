@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const costumeDesign = [
   {
     id: "unfortunately-ashly",
@@ -7,16 +9,16 @@ export const costumeDesign = [
     category: "costume-design",
     description: "Season 1 / Buzzfeed",
     section: "Costume Design",
-    cover: "/covers/UA.jpg",
+    cover: `${base}/covers/UA.jpg`,
     images: [
-            "/work/unfortunatly-ashly/ua1.jpg",
-            "/work/unfortunatly-ashly/ua2.jpg",
-            "/work/unfortunatly-ashly/ua3.jpg",
-            "/work/unfortunatly-ashly/ua4.jpg",
-            "/work/unfortunatly-ashly/ua5.jpg",
-            "/work/unfortunatly-ashly/ua6.jpg",
-            "/work/unfortunatly-ashly/ua7.jpg",
-            "/covers/uacover1.jpg"
+            `${base}/work/unfortunatly-ashly/ua1.jpg`,
+            `${base}/work/unfortunatly-ashly/ua2.jpg`,
+            `${base}/work/unfortunatly-ashly/ua3.jpg`,
+            `${base}/work/unfortunatly-ashly/ua4.jpg`,
+            `${base}/work/unfortunatly-ashly/ua5.jpg`,
+            `${base}/work/unfortunatly-ashly/ua6.jpg`,
+            `${base}/work/unfortunatly-ashly/ua7.jpg`,
+            `${base}/covers/uacover1.jpg`
         ],
     trailer: [
             "https://www.youtube.com/embed/11u12irGuH0?si=K1vwinNeF-_MsJNM",
@@ -30,11 +32,11 @@ export const costumeDesign = [
     category: "costume-design",
     description: "Netflix",
     section: "Costume Design",
-    cover: "/covers/AE.jpg",
+    cover: `${base}/covers/AE.jpg`,
     images: [
-            "/work/asteroid-vs-earth/AE2.jpg",
-            "/work/asteroid-vs-earth/AE3.jpg",
-            "/work/asteroid-vs-earth/AE4.jpg",
+            `${base}/work/asteroid-vs-earth/AE2.jpg`,
+            `${base}/work/asteroid-vs-earth/AE3.jpg`,
+            `${base}/work/asteroid-vs-earth/AE4.jpg`,
         ],
     trailer: [
             "https://www.youtube.com/embed/HIksMkGC6Xo?si=ykOaOlZvm9fgAz94",
@@ -47,7 +49,7 @@ export const costumeDesign = [
     role: "Costume Designer",
     category: "costume-design",
     section: "Costume Design",
-    cover: "/covers/OZ.jpg",
+    cover: `${base}/covers/OZ.jpg`,
     trailer: [
             "https://www.youtube.com/embed/NXlJJ3ExLhI?si=AusMGYSJ2pel6b8z",
         ]

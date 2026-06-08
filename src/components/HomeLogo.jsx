@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import cjhLogo from "../assets/CJH2.png";
+import cjhLogo from "../assets/CJH.png";
 import { useLocation } from "react-router-dom";
 
 

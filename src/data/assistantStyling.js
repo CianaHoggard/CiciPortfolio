@@ -11,7 +11,7 @@ export const assistantStyling = [
     embed: "/work/Arbys.mp4",
     thumb: "/work/arbys.jpg",
     client: "Arby’s",
-    talent: ["Anthony Anderson", "Cedric the Enyoutube]ertainer"]
+    talent: ["Anthony Anderson", "Cedric the Entertainer"]
   },
   {
     id: "celebrations-in-our-90s-brunch",
