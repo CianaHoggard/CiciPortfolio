@@ -4,11 +4,14 @@ export default function Contact() {
       <header className="pageHeader">
         <p className="eyebrow">Let’s connect</p>
         <h1>Contact</h1>
-        <p className="muted">For styling, costume, and creative inquiries.</p>
+        <p className="muted">
+          For styling, costume, and creative inquiries.
+        </p>
       </header>
 
       <section className="contactCard">
-        <a href="mailto:choggard514@gmail.com?subject=Portfolio Inquiry">Email:
+        <a href="mailto:choggard514@gmail.com?subject=Portfolio Inquiry">
+          <span className="contactLabel">Email:</span>
           <span className="email"> choggard514@gmail.com</span>
         </a>
 
@@ -16,11 +19,15 @@ export default function Contact() {
           href="https://instagram.com/cicihoggard"
           target="_blank"
           rel="noreferrer"
-        >Instagram:
-        <span className="instagram"> @cicihoggard</span>
+        >
+          <span className="contactLabel">Instagram:</span>
+          <span className="instagram"> @cicihoggard</span>
         </a>
 
-        <p>Location: Los Angeles, CA</p>
+        <p>
+          <span className="contactLabel">Location:</span>
+          <span className="location"> Los Angeles, CA</span>
+        </p>
 
         <a
           className="contactBtn"

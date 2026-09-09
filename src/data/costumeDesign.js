@@ -48,6 +48,7 @@ export const costumeDesign = [
     title: "Option Zero",
     role: "Costume Designer",
     category: "costume-design",
+    description: "TV MOVIE / 2016",
     section: "Costume Design",
     cover: `${base}covers/OZ.jpg`,
     trailer: [

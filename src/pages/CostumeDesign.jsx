@@ -13,15 +13,21 @@ export default function CostumeDesign() {
       <div ref={fancyboxRef}>
         {costumeDesign.map((group) => (
           <section key={group.id} className="gallerySection">
+
             <h2 className="galleryTitle">
               {group.title}
-              <br />
-              <div className="galleryCaption">{group.description}</div>
+              <span className="galleryCaption">
+                {group.description}
+              </span>
             </h2>
 
             <div className="stillsGrid">
               {group.images?.map((src) => (
-                <a key={src} data-fancybox="costume-design" href={src}>
+                <a
+                  key={src}
+                  data-fancybox="costume-design"
+                  href={src}
+                >
                   <img
                     src={src}
                     alt={group.title}
@@ -35,10 +41,8 @@ export default function CostumeDesign() {
             {group.trailer?.map((trailer, index) => (
               <section
                 key={index}
-                className="stack"
-                style={{ marginTop: "1rem" }}
+                className="stack trailerSection"
               >
-
                 <a
                   data-fancybox="costume-design"
                   href={trailer}
@@ -50,10 +54,14 @@ export default function CostumeDesign() {
                     alt={`${group.title} trailer`}
                     className="videoThumbImg"
                   />
-                  <div className="playBadge">▶</div>
+
+                  <div className="playBadge">
+                    ▶
+                  </div>
                 </a>
               </section>
             ))}
+
           </section>
         ))}
       </div>
