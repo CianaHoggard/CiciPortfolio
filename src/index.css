@@ -691,14 +691,9 @@ a:hover {
 
 .heroLogo {
   position: absolute;
-
-  outline: 3px solid red;
-
   width: min(320px, 55vw);
-
   opacity: 0;
   filter: blur(18px);
-
   animation:
     logoIntro 1.4s cubic-bezier(.2,.8,.2,1) forwards,
     logoDisappear 1s ease forwards;
@@ -1482,6 +1477,11 @@ a:hover {
 
   .landingHero {
     gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .landingName {
