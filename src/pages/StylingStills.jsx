@@ -14,8 +14,14 @@ export default function StylingStills() {
       <div ref={fancyboxRef}>
         {stylingStills.map((group) => (
           <section key={group.id} className="gallerySection">
-            <div className="stillsGrid">
-              {group.images.map((src) => (
+            <div
+              className={
+                group.id === "yoga" || group.id === "zombies"
+                  ? "stillsGrid masonryGrid"
+                  : "stillsGrid"
+              }
+              >
+                {group.images.map((src) => (
                 <a
                   key={src}
                   data-fancybox="styling-stills"
