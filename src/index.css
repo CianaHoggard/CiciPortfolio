@@ -692,6 +692,8 @@ a:hover {
 .heroLogo {
   position: absolute;
 
+  outline: 3px solid red;
+
   width: min(320px, 55vw);
 
   opacity: 0;

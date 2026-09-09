@@ -11,7 +11,20 @@ export default function Home() {
         <p className="landingKicker">
           Costume Design • Styling • Creative Direction
         </p>
-
+<div
+  style={{
+    position: "fixed",
+    bottom: "80px",
+    left: "10px",
+    zIndex: 99999,
+    background: "red",
+    color: "white",
+    padding: "6px 10px",
+    fontSize: "14px",
+  }}
+>
+  {window.innerWidth} × {window.innerHeight}
+</div>
       <h1 className="landingName" aria-label={name}>
           {name.split(" ").map((word, wordIndex) => (
             <span className="nameWord" key={wordIndex}>
