@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
   return (
     <article className="card">
       <Link to={href} className="cardMedia">
-        <img src={project.cover} alt={project.title} loading="lazy" />
+        <img src={project.cover} alt={project.title} />
       </Link>
 
       <div className="cardBody">
@@ -14,7 +14,7 @@ export default function ProjectCard({ project }) {
           <Link to={href}>{project.title}</Link>
         </h3>
 
-        
+
 
         {project.description && <p className="cardDesc">{project.description}</p>}
       </div>

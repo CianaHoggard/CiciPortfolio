@@ -18,15 +18,15 @@ export default function AssistantStyling() {
             href={p.embed}
             data-caption={[
               p.title,
-             p.director,
-               null,
+              p.director,
+              null,
             ].filter(Boolean).join(" — ")}
             className="videoThumb"
           >
             <img
               src={p.thumb}
               alt={p.title}
-              loading="lazy"
+
               className="videoThumbImg"
             />
             <div className="playBadge" aria-hidden="true">▶</div>

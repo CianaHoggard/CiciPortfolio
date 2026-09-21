@@ -47,7 +47,7 @@ export default function Project() {
                 className="mediaImg"
                 src={src}
                 alt={title}
-                loading="lazy"
+
               />
             ))}
           </div>

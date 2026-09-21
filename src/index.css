@@ -11,7 +11,7 @@
   --card: var(--surface);
 
   /* Text */
-  --text: #f3f2fa;
+  --text: #f0edf5;
   --muted: rgba(243, 242, 250, 0.68);
   --subtle: rgba(243, 242, 250, 0.48);
 
@@ -990,11 +990,12 @@ a:hover {
   border-radius: 0;
   background: rgba(255, 255, 255, 0.015);
 
-  font-family: "Boska", serif;
-  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-family: "Cormorant", serif;
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.02em;
+  text-transform: none;
 }
 
 .galleryCaption {
@@ -1407,24 +1408,68 @@ a:hover {
    17. Loader
    ========================================================= */
 
-.loader {
+.triangleLoader {
   width: 40px;
   aspect-ratio: 1.154;
-  --_g: no-repeat radial-gradient(farthest-side, #000 90%, #0000);
+
+  --_g: no-repeat radial-gradient(
+    farthest-side,
+    var(--accent) 90%,
+    transparent
+  );
+
   background:
     var(--_g) 50% 0,
     var(--_g) 0 100%,
     var(--_g) 100% 100%;
+
   background-size: 35% calc(35% * 1.154);
-  animation: l16 1s infinite;
+  animation: triangleLoaderAnimation 1s infinite;
 }
 
-@keyframes l16 {
+@keyframes triangleLoaderAnimation {
   50%,
   100% {
-    background-position: 100% 100%, 50% 0, 0 100%;
+    background-position:
+      100% 100%,
+      50% 0,
+      0 100%;
   }
 }
+
+.pageLoader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg);
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+}
+
+.pageLoader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.pageLoading {
+  visibility: hidden;
+}
+
+.pageReady {
+  visibility: visible;
+}
+
 
 
 /* =========================================================

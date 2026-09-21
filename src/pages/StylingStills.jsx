@@ -20,8 +20,8 @@ export default function StylingStills() {
                   ? "stillsGrid masonryGrid"
                   : "stillsGrid"
               }
-              >
-                {group.images.map((src) => (
+            >
+              {group.images.map((src) => (
                 <a
                   key={src}
                   data-fancybox="styling-stills"
@@ -31,7 +31,7 @@ export default function StylingStills() {
                     src={src}
                     alt={group.title}
                     className="stillsImg"
-                    loading="lazy"
+
                   />
                 </a>
               ))}

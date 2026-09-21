@@ -24,7 +24,7 @@ export default function StylingVideos() {
             <img
               src={v.thumb}
               alt={v.title || "Video"}
-              loading="lazy"
+
               className="videoThumbImg"
             />
             <div className="playBadge" aria-hidden="true">▶</div>

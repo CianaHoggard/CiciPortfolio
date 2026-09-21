@@ -21,15 +21,14 @@ export default function AssistantCostumeDesign() {
               key={`${project.id}-${index}`}
               data-fancybox="assistant-costume-design"
               href={videoUrl}
-              data-caption={`${project.title} — ${project.credit}${
-                project.designer ? ` — Costume Designer: ${project.designer}` : ""
-              }`}
+              data-caption={`${project.title} — ${project.credit}${project.designer ? ` — Costume Designer: ${project.designer}` : ""
+                }`}
               className="videoThumb"
             >
               <img
                 src={project.thumb}
                 alt={project.title || "Video"}
-                loading="lazy"
+
                 className="videoThumbImg"
               />
 

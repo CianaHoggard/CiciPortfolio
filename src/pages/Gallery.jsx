@@ -32,7 +32,7 @@ export default function Gallery({ title, subtitle, items }) {
         {filtered.map((it) => (
           <article className="galleryItem" key={it.id}>
             {it.type === "image" ? (
-              <img src={it.src} alt={it.alt || it.caption || title} loading="lazy" />
+              <img src={it.src} alt={it.alt || it.caption || title} />
             ) : (
               <div className="videoWrap">
                 <iframe

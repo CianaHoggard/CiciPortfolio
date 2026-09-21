@@ -12,7 +12,7 @@ export default function CollageCard({ project }) {
       <Link to={href} className="collageMedia" aria-label={`Open ${project.title}`}>
         <div className="collageGrid">
           {(imgs.length ? imgs : [fallback]).filter(Boolean).slice(0, 4).map((src, idx) => (
-            <img key={src + idx} src={src} alt="" loading="lazy" />
+            <img key={src + idx} src={src} alt="" />
           ))}
         </div>
 

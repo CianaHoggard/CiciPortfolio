@@ -32,7 +32,7 @@ export default function CostumeDesign() {
                     src={src}
                     alt={group.title}
                     className="stillsImg"
-                    loading="lazy"
+
                   />
                 </a>
               ))}
