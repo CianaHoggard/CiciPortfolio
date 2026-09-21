@@ -26,12 +26,10 @@ export default function usePageLoader(pathname) {
 
       Promise.all(imagePromises).then(() => {
         if (!cancelled) {
-          // TEMPORARY: keep loader visible for 3 seconds
-          setTimeout(() => {
             setLoaded(true);
-          }, 3000);
+          };
         }
-      });
+      );
     }, 0);
 
     return () => {

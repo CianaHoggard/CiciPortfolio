@@ -13,7 +13,7 @@
   /* Text */
   --text: #f0edf5;
   --muted: rgba(243, 242, 250, 0.68);
-  --subtle: rgba(243, 242, 250, 0.48);
+  --subtle: rgba(243, 242, 250, 0.48); 
 
   /* Lines */
   --border: rgba(243, 242, 250, 0.12);
